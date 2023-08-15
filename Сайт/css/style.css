@@ -423,7 +423,9 @@ html{scroll-behavior: smooth}
   height: 500px;
 }
 
-
+.mobile-background{
+	visibility: hidden;
+}
 .swiper-slide img:hover{
 	border: 3px solid black;
 	width: 400px;
@@ -836,8 +838,14 @@ body{overflow-x:hidden;}
 .main{
 	top:5%;
 }
+.mobile-background{
+	width: 100%;
+	height: 100vh;
+	visibility: visible;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+}
 .nav_main{
-
 background: url("../assets/images/bg.png") 30% center no-repeat;
 	}
 .nav{
@@ -851,9 +859,152 @@ background: url("../assets/images/bg.png") 30% center no-repeat;
 	justify-content: space-between;
 }
 .nav :nth-child(2), .nav :nth-child(4), .nav :nth-child(3), .nav :nth-child(5), .nav :nth-child(6){
-	padding-right: 60%;
+	margin-right: 60%;
+	padding-right: 0px;
+	color: white;
 }
 .nav :nth-child(1), .nav :nth-child(2), .nav :nth-child(7), .nav :nth-child(8){
-	padding-right: 10%;
+	margin-right: 10%;
+	padding-right: 0px;
+	color: white;
 }
+
+
+
+.prise{
+	height: 80vh;
+	background-size: 155%;
+}
+.left_Book h3{
+	font-size: 40px;
+}
+.left_Book{
+	padding-left: 0%;
+	margin-left: 0%;
+	width: 50%;
+	margin-top: 17%;
+}
+
+.headprise p{
+	font-size: 15px;
+}
+
+.left{
+	padding-left: 0%;
+}
+
+.left p:last-child{
+	color: #ff0101;
+	padding-left: 3%;
+	padding-top: 8%;
+	width: 200%;
+}
+
+.right_Book h3{
+	font-size: 40px;
+}
+
+.right_Book{
+	margin-top: 17%;
+	padding-left: 0%;
+	margin-left: 2%;
+}
+
+.right p{
+	font-size: 17px;
+}
+
+.priseright{
+	margin-top: -7%;
+	margin-left: 5%;
+}
+
+.contacts{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+}
+.colum{
+	width: 50%;
+	height: auto;
+	margin-top: -10%;
+}
+
+.colum h3{
+	margin-top: -33%;
+}
+#map{
+	width: 100%;
+}
+
+.con p{
+	font-size: 20px;
+}
+
+.MyCab{
+	margin-top: 35%;
+}
+
+.MyCab h3{
+	margin-top: 6%;
+}
+
+.first img:nth-child(1), .first img:nth-child(2){
+	width: 50%;
+}
+
+
+.buttoncat .button:nth-child(1){
+	font-size: 25px;
+	padding-left: 23px;
+	padding-right: 23px;
+	padding-top: 2%;
+	padding-bottom: 0px;
+	width: 12.5%;
+	height: 50px;
+}
+
+.buttoncat .button:nth-child(2){
+	font-size: 20px;
+padding-bottom: 0%;
+padding-top: 2.5%;
+width: 14%;
+height: 47px;
+padding-right: 23px;
+padding-left: 23px;
+}
+
+.buttoncat .button:nth-child(3){
+font-size: 25px;
+padding-bottom: 0%;
+padding-top: 2%;
+padding-left: 17px;
+padding-right: 29px;
+height: 50px;
+margin-left: 4%;
+
+}
+
+.buttoncat .button:nth-child(4){
+font-size: 18px;
+height: 45px;
+padding-left: 3px;
+padding-top: 3%;
+padding-bottom: 0px;
+padding-right: 60px;
+}
+
+.category{
+	height: auto;
+}
+
+.popup{
+	width: 80%;
+	height: 100vh;
+}
+
+body{
+	overflow-x: none;
+}
+
 }
