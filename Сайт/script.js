@@ -153,7 +153,7 @@ if (window.screen.height == 800 && window.screen.width == 1280){
   spaceBetween: 40,
 });
 };
-if (window.screen.height == 960 && window.screen.width == 640){
+if (window.screen.height <= 960 && window.screen.width <= 640){
     let swiper = new Swiper('.swiper', {
 
 
@@ -214,6 +214,37 @@ if (window.screen.height == 960 && window.screen.width == 640){
 };
 
 
+
+
 console.log(window.screen.height)
 
 console.log(window.screen.width)
+
+button1.onclick = function() {
+  document.getElementsByClassName('popup')[0].style.opacity = "1";
+  document.getElementsByClassName('popup')[0].style.visibility = "visible";
+  document.getElementsByTagName("body")[0].style.overflow = "hidden";
+}
+
+function Closed() {
+  document.getElementsByClassName('popup')[0].style.opacity = "0";
+  document.getElementsByClassName('popup')[0].style.visibility = "hidden";
+  document.getElementsByTagName("body")[0].style.overflow = "visible";
+}
+
+
+
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+  
+  

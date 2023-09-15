@@ -33,7 +33,7 @@
 		</div>
 	</div>
 
-<div class="lastwork">
+<div class="lastwork" id="lastwork">
 	<h3 id="lastwork">Последние работы:</h3>
 
 <div class="swiper">
@@ -63,7 +63,7 @@
 
 
 <div class="category" id="cat">
-	<div class="imgcat">
+<!--	<div class="imgcat">
 		<img src="assets/images/French.png">
 		<img src="assets/images/Des.png">
 		<img src="assets/images/Mat.png">
@@ -74,11 +74,32 @@
 		<a href="#popup1" class="button">Матовые</a>
 		<a href="#popup3" class="button">Дизайн</a>
 		<a href="#popup2" class="button">Наращивание</a>
+	</div> !-->
+
+		<div class="catblockx">
+		<img src="assets/images/French.png" alt="">
+		<button href="#popup" id="button1" class="button">Френч</a>
+	</div>
+
+	<div class="catblockx">
+		<img src="assets/images/Mat.png" alt="">
+		<button href="#popup" class="button">Матовые</button>
+	</div>
+
+
+	<div class="catblockx">
+		<img src="assets/images/Des.png" alt="">
+		<button href="#popup" class="button">Дизайн</a>
+	</div>
+
+	<div class="catblockx">
+		<img src="assets/images/Nar.png" alt="">
+		<button href="#popup" class="button">Наращивание</a>
 	</div>
 			  <div id="popup" class="popup">
   <div class="popup_body">
     <div class="popup_content">
-      <a class="close" href="#cat">X</a>
+      <button class="close" onclick="Closed()">X</button>
       <div class="popup_title">Френч</div>
       <div class="popup_con">
         <img src="Test.jpg" alt="" class="blocks">
@@ -102,7 +123,7 @@
   		  <div id="popup1" class="popup">
   <div class="popup_body">
     <div class="popup_content">
-      <a class="close" href="#cat">X</a>
+      <a class="close" href="">X</a>
       <div class="popup_title">Матовые</div>
       <div class="popup_con">
         <img src="Test.jpg" alt="" class="blocks">
@@ -126,7 +147,7 @@
   		  <div id="popup3" class="popup">
   <div class="popup_body">
     <div class="popup_content">
-      <a class="close" href="#cat">X</a>
+      <a class="close" href="">X</a>
       <div class="popup_title">Дизайн</div>
       <div class="popup_con">
         <img src="Test.jpg" alt="" class="blocks">
@@ -150,7 +171,7 @@
   		  <div id="popup2" class="popup">
   <div class="popup_body">
     <div class="popup_content">
-      <a class="close" href="#cat">X</a>
+      <a class="close" href="">X</a>
       <div class="popup_title">Наращивание</div>
       <div class="popup_con">
         <img src="Test.jpg" alt="" class="blocks">
